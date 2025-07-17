@@ -1,0 +1,43 @@
+img{
+    display: block;
+    max-inline-size: 100%;
+}
+
+.header{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    block-size: 90px;
+    background-color: whitesmoke;
+    box-shadow: 5px 5px 10px 0px rgba(0, 0, 0, 0.10), 5px 5px 10px 0px rgba(0, 0, 0, 0.06);
+}
+
+.header h1{
+    font-weight: 400;
+}
+
+.chef-claude{
+    max-inline-size: 70px;
+    border-radius: 100%;
+}
+
+.input{
+    display: flex;
+    gap:10px;
+}
+
+
+.add-ingredients{
+    border: none;
+    background-color: rgb(19, 18, 18);
+    color: rgb(221, 226, 226);
+    padding: 10px;
+    max-inline-size: 200px;
+    border-radius: 10px;   
+}
+
+.add-ingredients:hover{
+    cursor: pointer;
+    background-color: rgb(221, 226, 226);
+    color:rgb(19, 18, 18);
+}
