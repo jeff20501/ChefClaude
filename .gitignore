@@ -24,6 +24,5 @@ dist-ssr
 *.sw?
 
 
-# Ignore all .env files in this Vue project
-chef_claude/.env
-chef_claude/.env.*
+# Environment variables
+*.env

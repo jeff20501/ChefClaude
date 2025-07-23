@@ -26,12 +26,15 @@ img{
     gap:20px;
     padding: 40px;
     justify-content: center;
+    @media(width<800px){
+        justify-content: start;
+    }
 }
 
 .input-field{
     flex-grow: 1;
     max-width: 40%;
-    min-width: 20%;
+    min-width: 30%;
     border-radius: 6px;
     border: 1px solid #D1D5DB;
 }
@@ -106,14 +109,15 @@ ul.ingredients-list > li {
 
 .suggested-recipe-container {
     color: #475467;
-    line-height: 28px;
+    line-height: 35px;
     font-size: 1.125rem;
     font-weight: 400;
 }
 
+.suggested-recipe-container h2{
+    margin: 15px;
+}
+
 .suggested-recipe-container ul li, .suggested-recipe-container ol li {
     margin-bottom: 8px;
-}
-.ChefClaudeRecommends{
-    margin-top: 30px;
 }
