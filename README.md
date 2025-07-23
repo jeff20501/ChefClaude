@@ -173,8 +173,8 @@ const response = await getRecipe()
 
 ## Links
 
-[Live site]()
-[Github repo](https://github.com/jeff20501/ChefClaude)
+- [Live site]()
+- [Github repo](https://github.com/jeff20501/ChefClaude)
 
 ## Built with
 ### 🚀 Technologies Used
