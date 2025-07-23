@@ -9,7 +9,7 @@ img{
     gap: 20px;
     block-size: 90px;
     background-color: whitesmoke;
-    box-shadow: 5px 5px 10px 0px rgba(0, 0, 0, 0.10), 5px 5px 10px 0px rgba(0, 0, 0, 0.06);
+    box-shadow: 10px 10px 15px 0px rgba(0, 0, 0, 0.10), 5px 5px 10px 0px rgba(0, 0, 0, 0.06);
 }
 
 .header h1{
@@ -23,21 +23,97 @@ img{
 
 .input{
     display: flex;
-    gap:10px;
+    gap:20px;
+    padding: 40px;
+    justify-content: center;
 }
 
-
+.input-field{
+    flex-grow: 1;
+    max-width: 40%;
+    min-width: 20%;
+    border-radius: 6px;
+    border: 1px solid #D1D5DB;
+}
+ 
 .add-ingredients{
+    font-family: 'Inter', sans-serif;
     border: none;
-    background-color: rgb(19, 18, 18);
-    color: rgb(221, 226, 226);
+    background-color: #141413;
+    color: #FAFAF8;
     padding: 10px;
-    max-inline-size: 200px;
-    border-radius: 10px;   
+    border-radius: 6px;  
+    font-size: 0.875rem; 
+}
+
+.add-ingredients::before{
+    content: "+";
+    margin-right: 5px;
 }
 
 .add-ingredients:hover{
     cursor: pointer;
     background-color: rgb(221, 226, 226);
     color:rgb(19, 18, 18);
+} 
+
+.wrapper{
+    padding: 50px;
+}
+
+ul.ingredients-list {
+    margin-bottom: 48px;
+    margin-top: 30px;
+}
+
+ul.ingredients-list > li {
+    color: #475467;
+    line-height: 28px;
+}
+
+.get-recipe-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 8px;
+    background: #F0EFEB;
+    padding: 10px 28px;
+}
+
+.get-recipe-container h3 {
+    font-size: 1.125rem;
+    font-weight: 500;
+    line-height: 24px;
+}
+
+.get-recipe-container p {
+    color: #6B7280;
+    font-size: 0.875rem;
+    line-height: 20px;
+}
+
+.get-recipe-container button {
+    border: none;
+    border-radius: 6px;
+    background: #D17557;
+    box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.05);
+    color: #FAFAF8;
+    padding: 9px 17px;
+    font-family: Inter, sans-serif;
+    font-size: 0.875rem;
+    cursor: pointer;
+}
+
+.suggested-recipe-container {
+    color: #475467;
+    line-height: 28px;
+    font-size: 1.125rem;
+    font-weight: 400;
+}
+
+.suggested-recipe-container ul li, .suggested-recipe-container ol li {
+    margin-bottom: 8px;
+}
+.ChefClaudeRecommends{
+    margin-top: 30px;
 }
