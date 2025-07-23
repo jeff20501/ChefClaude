@@ -3,7 +3,7 @@ import { IngredientsList } from "./IngredientsList"
 import { ClaudeRecipe } from "./ClaudeRecipe"
 import { getRecipeFromMistral } from "./AI"
 export function Main(){
-    const [ingredients, setIngredients]=useState(["all the main spices", "pasta", "ground beef", "tomato paste"])
+    const [ingredients, setIngredients]=useState([])
 
     const [recipe, setRecipe] = useState("")
     async function getRecipe() {
