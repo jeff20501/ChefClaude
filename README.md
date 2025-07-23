@@ -18,7 +18,7 @@
 
 ## 🧠Overview
 
-- Chef Claude is an AI-powered React web application that generates personalized recipes based on the ingredients users input. It uses Hugging Face's Mixtral-8x7B-Instruct model to create recipes formatted in Markdown for easy reading.
+- Chef Claude is an AI-powered React web application that generates personalized recipes based on the ingredients users input. It uses Hugging Face's ```Mixtral-8x7B```-Instruct model to create recipes formatted in Markdown for easy reading.
 
 - This project is inspired by Scrimba’s Learn React course by Bob Ziroll and demonstrates practical use of React hooks, conditional rendering, environment variables, form handling, and markdown rendering.
 
@@ -40,7 +40,7 @@ Make sure the file is exactly:
 ``` bash
 /my-first-react/.env
 ```
-- With content: ```VITE_HF_ACCESS_TOKEN=your_token_here```
+- With content: ```VITE_HF_ACCESS_TOKEN=My_token_here```
 
 ### ✅ Challenge 2: Markdown output from the API (Rendering)
 ### ❌ Problem:
@@ -107,7 +107,7 @@ Now each ingredient gets tracked in an array, and I can render them with ```.map
 
 ### ✅Challenge: Preventing Page Reload on Form Submission
 ### ❌ Problem:
-Your page kept reloading when I submitted a form — which wipes state and breaks React behavior.
+My page kept reloading when I submitted a form — which wipes state and breaks React behavior.
 
 I used:
 ```js
@@ -136,7 +136,7 @@ And realized that this approach, specific to Scrimba, prevents reloading because
 
 ### ✅Challenge: Async Call Not Awaited
 ### ❌ Problem:
-In your ```getRecipe``` function, I made an API call, but didn’t ```await``` it — so it returned a ```Promise```, not the actual data.
+In My ```getRecipe``` function, I made an API call, but didn’t ```await``` it — so it returned a ```Promise```, not the actual data.
 
 I did:
 ```jsx
@@ -199,7 +199,7 @@ What I learned:
 - The importance of using functional updates ```(setState(prev => ...))``` for reliability.
 
 #### ✅ 2. Preventing page reload on form submission
-- Problem: Your form was reloading the page on submit.
+- Problem: My form was reloading the page on submit.
 
 - What I did: Instead of relying on onSubmit and needing to call event.preventDefault(), I used the action={function} approach (common in Scrimba’s style), which naturally avoids a reload.
 
@@ -207,10 +207,10 @@ What I learned:
 
 - That browser default behavior reloads the page on ```<form>``` submit.
 
-- Using ```action={() => ...}``` inside your form tag keeps things reactive without a refresh.
+- Using ```action={() => ...}``` inside My form tag keeps things reactive without a refresh.
 
 #### ⚠️ 3. Async call not awaited
-Problem: I called the API but forgot to ```await``` the response, so your data was undefined.
+Problem: I called the API but forgot to ```await``` the response, so My data was undefined.
 
 - What I did: I realized the mistake and added ```await``` in front of the API fetch.
 
@@ -299,4 +299,4 @@ Currently, two official plugins are available:
 
 ## Expanding the ESLint configuration
 
-If I are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+If I are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in My project.
