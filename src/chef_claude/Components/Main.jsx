@@ -1,9 +1,12 @@
-import { useState } from "react"
+import { useState, useEffect, useRef } from "react"
 import { IngredientsList } from "./IngredientsList"
 import { ClaudeRecipe } from "./ClaudeRecipe"
 import { getRecipeFromMistral } from "./AI"
 export function Main(){
     const [ingredients, setIngredients]=useState([])
+
+    const recipeSection= useRef(null)
+    console.log(recipeSection)
 
     const [recipe, setRecipe] = useState("")
     async function getRecipe() {
@@ -17,6 +20,12 @@ export function Main(){
         setIngredients((prevIngredients)=>[...prevIngredients, newIngredient])
         console.log(ingredients)
     }
+
+    useEffect(() => {
+        if (recipe !== "" && recipeSection.current !== null) {
+            recipeSection.current.scrollIntoView({behavior: "smooth"})
+        }
+    }, [recipe])
  
     return(
         <article className="wrapper">
@@ -34,6 +43,7 @@ export function Main(){
            {ingredients.length > 0 ? <IngredientsList 
                     ingredients={ingredients}
                     getRecipe={getRecipe}
+                    ref={recipeSection}
                 /> 
             : null}
             <ClaudeRecipe recipe={recipe}/>
