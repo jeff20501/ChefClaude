@@ -1,4 +1,5 @@
 import { HfInference } from '@huggingface/inference';
+const token = import.meta.env.VITE_HF_ACCESS_TOKEN;
 
 const SYSTEM_PROMPT = `
 You are an assistant that receives a list of ingredients that a user has and suggests a recipe they could make
@@ -7,7 +8,7 @@ You are an assistant that receives a list of ingredients that a user has and sug
  Format your response in markdown to make it easier to render to a web page
 `
 
-const hf = new HfInference(import.meta.env.VITE_HF_ACCESS_TOKEN)
+const hf = new HfInference(token)
 
 export async function getRecipeFromMistral(ingredientsArr) {
     const ingredientsString = ingredientsArr.join(", ")
