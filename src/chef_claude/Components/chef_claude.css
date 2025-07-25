@@ -6,8 +6,10 @@ img{
 .header{
     display: flex;
     justify-content: center;
+    align-items: center;
+    font-weight: bolder;
     gap: 20px;
-    block-size: 90px;
+    block-size: 100px;
     background-color: whitesmoke;
     box-shadow: 10px 10px 15px 0px rgba(0, 0, 0, 0.10), 5px 5px 10px 0px rgba(0, 0, 0, 0.06);
 }
